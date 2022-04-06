@@ -73,50 +73,56 @@ def input_album():
     """)
 
 def input_tracks():
+    # connection.execute("""INSERT INTO tracks(track_name, duration, album_id)
+    #                 VALUES('Cyanide', 399, 8);
+    # """)
+    # connection.execute("""INSERT INTO tracks(track_name, duration, album_id)
+    #                 VALUES('Got Butter On It', 188, 7);
+    # """)
+    # connection.execute("""INSERT INTO tracks(track_name, duration, album_id)
+    #                 VALUES('Chopin: Mazurka No.27 In E Minor Op.41 No.1', 114, 6);
+    # """)
+    # connection.execute("""INSERT INTO tracks(track_name, duration, album_id)
+    #                 VALUES('Beethoven: Piano Sonata No. 12 in A-Flat Major, Op. 26: IV. Allegro', 180, 5);
+    # """)
+    # connection.execute("""INSERT INTO tracks(track_name, duration, album_id)
+    #                 VALUES('In the Closet', 390, 4);
+    # """)
+    # connection.execute("""INSERT INTO tracks(track_name, duration, album_id)
+    #                 VALUES('Shadows', 208, 3);
+    # """)
+    # connection.execute("""INSERT INTO tracks(track_name, duration, album_id)
+    #                 VALUES('A Hard Rains A-Gonna Fall', 419, 2);
+    # """)
+    # connection.execute("""INSERT INTO tracks(track_name, duration, album_id)
+    #                 VALUES('Ready, Willing And Able', 144, 1);
+    # """)
+    # connection.execute("""INSERT INTO tracks(track_name, duration, album_id)
+    #                 VALUES('My Back Pages', 259, 2);
+    # """)
+    # connection.execute("""INSERT INTO tracks(track_name, duration, album_id)
+    #                 VALUES('Masters Of The World', 243, 3);
+    # """)
+    # connection.execute("""INSERT INTO tracks(track_name, duration, album_id)
+    #                 VALUES('Give In to Me', 328, 4);
+    # """)
+    # connection.execute("""INSERT INTO tracks(track_name, duration, album_id)
+    #                 VALUES('Beethoven: Piano Sonata No. 15 in D Major, Op. 28 "Pastoral": II. Andante', 361, 5);
+    # """)
+    # connection.execute("""INSERT INTO tracks(track_name, duration, album_id)
+    #                 VALUES('Chopin: Variations in E, "Hexameron"', 99, 6);
+    # """)
+    # connection.execute("""INSERT INTO tracks(track_name, duration, album_id)
+    #                 VALUES('Jazz Battle', 163, 7);
+    # """)
+    # connection.execute("""INSERT INTO tracks(track_name, duration, album_id)
+    #                 VALUES('My Apocalypse', 361, 8);
+    # """)
     connection.execute("""INSERT INTO tracks(track_name, duration, album_id)
-                    VALUES('Cyanide', 399, 8);
+                    VALUES('The Unforgiven III', 466, 8);
     """)
     connection.execute("""INSERT INTO tracks(track_name, duration, album_id)
-                    VALUES('Got Butter On It', 188, 7);
-    """)
-    connection.execute("""INSERT INTO tracks(track_name, duration, album_id)
-                    VALUES('Chopin: Mazurka No.27 In E Minor Op.41 No.1', 114, 6);
-    """)
-    connection.execute("""INSERT INTO tracks(track_name, duration, album_id)
-                    VALUES('Beethoven: Piano Sonata No. 12 in A-Flat Major, Op. 26: IV. Allegro', 180, 5);
-    """)
-    connection.execute("""INSERT INTO tracks(track_name, duration, album_id)
-                    VALUES('In the Closet', 390, 4);
-    """)
-    connection.execute("""INSERT INTO tracks(track_name, duration, album_id)
-                    VALUES('Shadows', 208, 3);
-    """)
-    connection.execute("""INSERT INTO tracks(track_name, duration, album_id)
-                    VALUES('A Hard Rains A-Gonna Fall', 419, 2);
-    """)
-    connection.execute("""INSERT INTO tracks(track_name, duration, album_id)
-                    VALUES('Ready, Willing And Able', 144, 1);
-    """)
-    connection.execute("""INSERT INTO tracks(track_name, duration, album_id)
-                    VALUES('My Back Pages', 259, 2);
-    """)
-    connection.execute("""INSERT INTO tracks(track_name, duration, album_id)
-                    VALUES('Masters Of The World', 243, 3);
-    """)
-    connection.execute("""INSERT INTO tracks(track_name, duration, album_id)
-                    VALUES('Give In to Me', 328, 4);
-    """)
-    connection.execute("""INSERT INTO tracks(track_name, duration, album_id)
-                    VALUES('Beethoven: Piano Sonata No. 15 in D Major, Op. 28 "Pastoral": II. Andante', 361, 5);
-    """)
-    connection.execute("""INSERT INTO tracks(track_name, duration, album_id)
-                    VALUES('Chopin: Variations in E, "Hexameron"', 99, 6);
-    """)
-    connection.execute("""INSERT INTO tracks(track_name, duration, album_id)
-                    VALUES('Jazz Battle', 163, 7);
-    """)
-    connection.execute("""INSERT INTO tracks(track_name, duration, album_id)
-                    VALUES('My Apocalypse', 361, 8);
+                    VALUES('The End Of The Line', 472, 8);
     """)
 
 def input_compilation():
@@ -285,18 +291,18 @@ if __name__ == '__main__':
     engine = sqlalchemy.create_engine('postgresql://alex1:Volgograd2@localhost:5432/pdlesson2')
     connection = engine.connect()
     # заполняем жанры
-    input_genre()
+    # input_genre()
     # заполняем исполнителей
-    input_performer()
+    # input_performer()
     # заполняем альбомы
-    input_album()
+    # input_album()
     # заполняем треки
     input_tracks()
     # заполняем сборники
-    input_compilation()
+    # input_compilation()
     # заполняем связи жанр-исполнитель
-    input_genreperformer()
+    # input_genreperformer()
     # заполняем связи альбом-исполнитель
-    input_albumperformer()
+    # input_albumperformer()
     # заполняем связи сборник-трек
-    inpit_compilationtracks()
+    # inpit_compilationtracks()
